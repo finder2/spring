@@ -31,6 +31,7 @@ public class CommonController {
 		}
 
 		if (logout != null) {
+			log.info("fail");
 			model.addAttribute("logout", "Logout!!");
 		}
 	}

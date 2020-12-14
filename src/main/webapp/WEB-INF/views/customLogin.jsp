@@ -38,25 +38,26 @@
 </head>
 
 <body>
-
+    <a href="front/index.html">home</a>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
+			
 				<div class="login-panel panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Please Sign In</h3>
+						<h3 class="panel-title">Login</h3>
 					</div>
 					<div class="panel-body">
-						<form role="form" method='post' action="/login">
+						<form role="form" method='post' action="member/login">
 							<fieldset>
 								<div class="form-group">
 									<input class="form-control" placeholder="userid"
-										name="username" type="text" autofocus>
-								</div>
+										name="ID" type="text" autofocus> 
+								</div> <!-- 아이디 입력 -->
 								<div class="form-group">
 									<input class="form-control" placeholder="Password"
-										name="password" type="password" value="">
-								</div>
+										name="PASSWORD" type="password" value="">
+								</div> <!-- 비밀번호 입력 -->
 								<div class="checkbox">
 									<label> <input name="remember-me" type="checkbox">Remember
 										Me

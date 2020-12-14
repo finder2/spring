@@ -22,7 +22,7 @@ import lombok.extern.log4j.Log4j;
 
 @Controller
 @Log4j
-@RequestMapping("/admin/*")
+@RequestMapping("/front")
 public class BoardController {
 	
 	@Value("${globalConfig.uploadPath}")
@@ -36,6 +36,12 @@ public class BoardController {
 	public void register() {
 
 	}
+	
+	@GetMapping("/index")
+	public void mainpage() {
+		// 메인페이지 이동
+	}
+	
 	
 	@GetMapping("/list")
 	public void list(Criteria cri, Model model) {
@@ -78,7 +84,7 @@ public class BoardController {
 
 		rttr.addFlashAttribute("result", board.getBno());
 
-		return "redirect:/admin/list";
+		return "redirect:/front/index";
 	}
 
 	@GetMapping({ "/get", "/modify" })
@@ -116,7 +122,7 @@ public class BoardController {
 			rttr.addFlashAttribute("result", "success");
 		}
 
-		return "redirect:/admin/list" + cri.getListLink();
+		return "redirect:/front" + cri.getListLink();
 	}
 
 	@PreAuthorize("principal.username == #writer")
@@ -128,7 +134,7 @@ public class BoardController {
 			rttr.addFlashAttribute("result", "success");
 		}
 
-		return "redirect:/admin/list" + cri.getListLink();
-	}
+		return "redirect:/front" + cri.getListLink();
+	} 
 
 }

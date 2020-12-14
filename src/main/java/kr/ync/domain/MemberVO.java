@@ -1,19 +1,18 @@
 package kr.ync.domain;
 
-import java.util.Date;
-import java.util.List;
 
 import lombok.Data;
 
-@Data
-public class MemberVO {
 
-	private String userid;
-	private String userpw;
-	private String userName;
-	private boolean enabled;
+public @Data class MemberVO {
 
-	private Date regDate;
-	private Date updateDate;
-	private List<AuthVO> authList;
+	private String ID;
+	private String PASSWORD;
+	private String NAME;
+	private String NICKNAME;
+    private String EMAIL;
+    private Integer USER_LEVEL;
+    
+    
 }
+

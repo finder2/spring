@@ -11,9 +11,13 @@ import kr.ync.security.domain.CustomUser;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
-public class CustomUserDetailsService implements UserDetailsService {
+public class CustomUserDetailsService implements UserDetailsService {@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-	@Autowired
+	/*@Autowired
 	private MemberMapper memberMapper;
 
 	@Override
@@ -28,6 +32,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 
 //		return null;
 		return vo == null ? null : new CustomUser(vo);
-	}
+	}*/
 
 }

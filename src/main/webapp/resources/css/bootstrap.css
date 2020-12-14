@@ -5854,8 +5854,13 @@ button.close {
 }
 
 .carousel-inner {
+  margin-top:5px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  width: 100%;
+  width: 50%;
+  height: 40%;
+  
   overflow: hidden;
 }
 

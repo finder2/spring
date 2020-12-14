@@ -4,5 +4,5 @@ import kr.ync.domain.MemberVO;
 
 public interface MemberMapper {
 
-	public MemberVO read(String userid);
+	public MemberVO read(MemberVO vo);
 }

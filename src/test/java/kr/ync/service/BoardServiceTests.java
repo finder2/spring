@@ -1,5 +1,7 @@
 package kr.ync.service;
 
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +24,13 @@ public class BoardServiceTests {
 	
 //	@Test
 //	public void testExist() {
-//		
+//	
 //		log.info("=====================");
 //		log.info(service);
-//		assertNotNull(service);
-//		log.info("=====================");
-//	}
-//
+//	assertNotNull(service);
+//	log.info("=====================");
+//  }
+
 //	@Test
 //	public void testRegister() {
 //
